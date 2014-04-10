@@ -1,0 +1,21 @@
+{
+  "name": "cache-client",
+  "description": "An easy to use cache client that allows use for memcached, redis, or lru-cache",
+  "keywords": [
+    "redis",
+    "memcached",
+    "cache",
+    "lru-cache"
+  ],
+  "version": "0.0.19",
+  "author": "Chris Weston",
+  "main": "./lib/cache.js",
+  "repository": {
+    "url": ""
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": "*"
+  }
+}
