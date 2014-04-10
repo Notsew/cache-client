@@ -7,11 +7,11 @@
     "cache",
     "lru-cache"
   ],
-  "version": "0.0.19",
+  "version": "0.0.20",
   "author": "Chris Weston",
   "main": "./lib/cache.js",
   "repository": {
-    "url": ""
+    "url": "https://github.com/Notsew/cache-client.git"
   },
   "devDependencies": {
   },
