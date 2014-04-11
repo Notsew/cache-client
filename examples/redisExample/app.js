@@ -8,6 +8,8 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var cache = require("../../lib/cache");
+cache.setup({store:"redis", port:6379, host:"127.0.0.1", opts:{}});
 
 var app = express();
 
