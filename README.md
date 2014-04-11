@@ -1,5 +1,5 @@
 # cache-client
-This is a caching api that allows you to connect to redis, memcached, or lru-cache.  This utilizes the npm modules lru-cache, redis, or memcached.  So you must have one of those installed locally or globally.
+This is a caching api that allows you to connect to redis, memcached, or lru-cache.  This utilizes the npm modules lru-cache, redis, or memcached.  I have required them as dependencies so that they are installed with cache-client.
 
 I started this project so that I could have an easy way to interact with each cache mechanism, using a single api.  This made it easy to use between multiple environments and multiple projects.
 Now Supports all three cache stores.
