@@ -8,6 +8,8 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var cache = require("../../lib/cache");
+cache.setup({store: "memcached", host:"localhost:11211", opts:{}})
 
 var app = express();
 
@@ -31,7 +33,10 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/get', routes.get);
+app.get("/set", routes.set);
+app.get("/remove", routes.remove);
+app.get("/clear", routes.clear);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
