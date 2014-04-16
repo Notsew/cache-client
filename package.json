@@ -7,7 +7,7 @@
     "cache",
     "lru-cache"
   ],
-  "version": "0.0.21",
+  "version": "0.0.22",
   "author": "Chris Weston",
   "main": "./lib/cache.js",
   "repository": {
